@@ -238,26 +238,8 @@ public class Transformation
 	private int     intervals;
 	/** x- B-spline coefficients keeping the transformation from source to target */
 	private double  [][]cxSourceToTarget = null;
-	public double[][] getCxSourceToTarget() {
-		return cxSourceToTarget;
-	}
-
-
-	public void setCxSourceToTarget(double[][] cxSourceToTarget) {
-		this.cxSourceToTarget = cxSourceToTarget;
-	}
-
 	/** y- B-spline coefficients keeping the transformation from source to target */
 	private double  [][]cySourceToTarget = null;
-	public double[][] getCySourceToTarget() {
-		return cySourceToTarget;
-	}
-
-
-	public void setCySourceToTarget(double[][] cySourceToTarget) {
-		this.cySourceToTarget = cySourceToTarget;
-	}
-
 	/** x- B-spline coefficients keeping the transformation from target to source */
 	private double  [][]cxTargetToSource = null;
 	/** y- B-spline coefficients keeping the transformation from target to source */

@@ -50,6 +50,7 @@ import ij.IJ;
 import ij.ImagePlus;
 import ij.WindowManager;
 import ij.gui.ImageCanvas;
+import ij.gui.ImageCanvas2;
 import ij.gui.ImageWindow;
 import ij.gui.Roi;
 
@@ -138,7 +139,7 @@ public class PointHandler extends Roi
 		final ImageWindow iw = imp.getWindow();
 		if(null != iw)
 		{
-			final ImageCanvas ic = iw.getCanvas();
+			final ImageCanvas2 ic = iw.getCanvas();
 			//iw.requestFocus();
 			iw.removeKeyListener(IJ.getInstance());
 			iw.addKeyListener(pa);
@@ -501,7 +502,7 @@ public class PointHandler extends Roi
 			final ImageWindow iw = imp.getWindow();
 			if(null != iw)
 			{
-				final ImageCanvas ic = iw.getCanvas();
+				final ImageCanvas2 ic = iw.getCanvas();
 
 				ic.removeKeyListener(pa);
 				ic.removeMouseListener(pa);

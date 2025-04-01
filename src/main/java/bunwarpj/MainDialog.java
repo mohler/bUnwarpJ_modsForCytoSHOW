@@ -54,6 +54,7 @@ import ij.ImagePlus;
 import ij.Macro;
 import ij.gui.GenericDialog;
 import ij.gui.ImageCanvas;
+import ij.gui.ImageCanvas2;
 import ij.gui.PointRoi;
 import ij.gui.Roi;
 import ij.gui.Toolbar;
@@ -106,9 +107,9 @@ public class MainDialog extends GenericDialog
 
 	// Image representations (canvas and ImagePlus)
 	/** Canvas of the source image */
-	private ImageCanvas sourceIc = null;
+	private ImageCanvas2 sourceIc = null;
 	/** Canvas of the target image */
-	private ImageCanvas targetIc = null;
+	private ImageCanvas2 targetIc = null;
 	/** Image representation for source image */
 	private ImagePlus sourceImp = null;
 	/** Image representation for target image */
@@ -1133,7 +1134,7 @@ public class MainDialog extends GenericDialog
 	private void permuteImages (boolean bIsReverse)
 	{
 		// Swap image canvas
-		final ImageCanvas swapIc = this.sourceIc;
+		final ImageCanvas2 swapIc = this.sourceIc;
 		this.sourceIc = this.targetIc;
 		this.targetIc = swapIc;
 
